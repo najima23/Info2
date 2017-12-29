@@ -11,9 +11,9 @@
 #include "datastructure.h"
 
 #ifdef _WIN32
-#define CLEAR "cls"
-#else _unix_
-#define CLEAR "clear"
+  #define CLEAR "cls"
+#else
+  #define CLEAR "clear"
 #endif
 
 /********************************************************
@@ -25,12 +25,12 @@
 
 void clearBuffer(void)
 {
-    char dummy;
-    do
-    {
-        scanf("%c", &dummy);
+  char dummy;
+  do
+  {
+    scanf("%c", &dummy);
 
-    } while (dummy != '\n');
+  } while (dummy != '\n');
 }
 
 /********************************************************
@@ -42,7 +42,7 @@ void clearBuffer(void)
 
 void clearScreen(void)
 {
-    system(CLEAR);
+  system(CLEAR);
 }
 
 /********************************************************
@@ -56,23 +56,23 @@ void clearScreen(void)
 
 int askYesOrNo(char *text)
 {
-    char akward;
+  char akward;
 
-    do
-    {
+  do
+  {
 
-        printf("\n");
-        printf("%s", text);
-        scanf("%c", &akward);
-        if (akward != '\n') clearBuffer();
-
-
-        if ((akward == 'j') || (akward == 'J') || (akward == 'n') || (akward == 'N'))
-            return ((akward == 'j') || (akward == 'J')) ? 1 : 0;
+    printf("\n");
+    printf("%s", text);
+    scanf("%c", &akward);
+    if (akward != '\n') clearBuffer();
 
 
-        printf("Ups, da lief etwas schief!\nBitte nur 'j' oder 'n' eingeben!");
-    } while (1);
+    if ((akward == 'j') || (akward == 'J') || (akward == 'n') || (akward == 'N'))
+      return ((akward == 'j') || (akward == 'J')) ? 1 : 0;
+
+
+    printf("Ups, da lief etwas schief!\nBitte nur 'j' oder 'n' eingeben!");
+  } while (1);
 }
 
 /********************************************************
@@ -84,10 +84,10 @@ int askYesOrNo(char *text)
  *  return:          void
  *******************************************************/
 
-void waitForEnter
+void waitForEnter()
 {
-    printf("Bitte Eingabetaste druecken. \n");
-    clearBuffer();
+  printf("Bitte Eingabetaste druecken. \n");
+  clearBuffer();
 }
 
 /********************************************************
@@ -101,10 +101,10 @@ void waitForEnter
 
 void printLine(char c, int count)
 {
-    while (count != 0)
-    {
-        printf("%c", c);
-        count--;
-    }
-    printf("\n");
+  while (count != 0)
+  {
+    printf("%c", c);
+    count--;
+  }
+  printf("\n");
 }

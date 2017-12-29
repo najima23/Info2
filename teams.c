@@ -3,49 +3,53 @@
 //
 #include <stdio.h>
 #include <string.h>
+
 #include "teams.h"
 #include "tools.h"
-#include "menu.h"
+
 #include "datastructure.h"
 
 int TeamCounter = 0;
 TTeam Teams[MAXTEAMS];
 
-void createTeam
+void createTeam()
 {
-    printf("createTeam");
-    waitForEnter();
+  printf("createTeam");
+  waitForEnter();
 }
 
-void deleteTeam
+void deleteTeam()
 {
-    printf("deleteTeam");
-    waitForEnter();
+  printf("deleteTeam");
+  waitForEnter();
 }
 
-void addPlayer
+void addPlayer()
 {
-    printf("addPlayer");
-    waitForEnter();
+  printf("addPlayer");
+  waitForEnter();
 }
 
-void deletePlayer{
-    printf("deletePlayer");
-    waitForEnter();
+void deletePlayer()
+{
+  printf("deletePlayer");
+  waitForEnter();
 }
 
-void searchPlayer{
-    printf("searchPlayer");
-    waitForEnter();
+void searchPlayer()
+{
+  printf("searchPlayer");
+  waitForEnter();
 }
 
-int sortTeams{
-    printf("sortTeams");
-    waitForEnter();
+int sortTeams()
+{
+  printf("sortTeams");
+  waitForEnter();
 }
 
-void listTeams{
-    printf("listTeams");
-    waitForEnter();
-
+void listTeams()
+{
+  printf("listTeams");
+  waitForEnter();
 };
