@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/info2uebung2.dir/main.c.o CMakeFiles/info2uebung2.dir/datetime.c.o CMakeFiles/info2uebung2.dir/teams.c.o CMakeFiles/info2uebung2.dir/tools.c.o CMakeFiles/info2uebung2.dir/menu.c.o  -o info2uebung2 
